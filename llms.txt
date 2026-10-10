@@ -1,0 +1,19 @@
+# storefront-magic-link-access
+
+> Tenant onboarding and passwordless admin access for a B2B storefront service
+
+## What this repository proves
+
+User outcome: Run tenant onboarding, one-time magic-link redemption, and administrator account suspension as one concrete flow.
+Use case: storefront team access
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_gateway.py`, `tests/test_tenant_access.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

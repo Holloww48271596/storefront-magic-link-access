@@ -1,0 +1,1 @@
+"""Storefront team access example."""
